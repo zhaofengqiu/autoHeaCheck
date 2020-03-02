@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据填写</title>
+    {{ bootstrap.load_css() }}
+    <style>
+        #box{
+            padding: 10vh 0;
+            height: 80vh;
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 24px;
+        }
+        #box #warn p {
+            font-size:15px;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    {% from 'bootstrap/form.html' import render_field %} 
+    <div id="box">
+        {% for message in get_flashed_messages() %}
+            <p class="alert-warning">{{ message }}</p>
+        {% endfor %}
+        <div id="warn">
+            <p>注意点:</p>
+            <p >(1)以下信息都是我的温大中的"温州大学学生健康登记表中的信息</p>
+            <p>(2)只要只要填写一次,以后每天都会自动在八点钟进行一次提交"</p>
+            <p>(3)每次提交完毕后,都会发送一封邮件到你的邮箱,表明已经提交完毕</p>
+            <p>(4)下面信息中的部门,就是登记表中姓名第一个籍贯上面的"部门",</p>
+            <p>下面已经默认填写我自己的部门,大家改成自己的部门就可以了.</p>
+        </div>
+
+        <form action="" method="POST">
+            {{ form.csrf_token }}
+            {{ render_field(form.name) }}
+            {{ render_field(form.sex) }}
+            {{ render_field(form.schoolnum) }}
+            {{ render_field(form.bumen) }}
+            {{ render_field(form.phone) }}
+            {{ render_field(form.email) }}
+             {{ render_field(form.submit) }}
+        </form>
+        {{ bootstrap.load_js() }}
+    </div>
+</body>
+</html>

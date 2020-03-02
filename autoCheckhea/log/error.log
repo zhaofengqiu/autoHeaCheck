@@ -1,0 +1,17 @@
+[2020-03-02 12:08:18 +0800] [16775] [INFO] Starting gunicorn 20.0.4
+[2020-03-02 12:08:18 +0800] [16775] [INFO] Listening at: http://127.0.0.1:6010 (16775)
+[2020-03-02 12:08:18 +0800] [16775] [INFO] Using worker: sync
+[2020-03-02 12:08:18 +0800] [16778] [INFO] Booting worker with pid: 16778
+[2020-03-02 12:08:18 +0800] [16779] [INFO] Booting worker with pid: 16779
+[2020-03-02 12:08:19 +0800] [16780] [INFO] Booting worker with pid: 16780
+[2020-03-02 12:10:02 +0800] [16775] [INFO] Handling signal: int
+[2020-03-02 12:10:02 +0800] [16779] [INFO] Worker exiting (pid: 16779)
+[2020-03-02 12:10:02 +0800] [16780] [INFO] Worker exiting (pid: 16780)
+[2020-03-02 12:10:02 +0800] [16778] [INFO] Worker exiting (pid: 16778)
+[2020-03-02 12:10:03 +0800] [16775] [INFO] Shutting down: Master
+[2020-03-02 12:10:10 +0800] [16839] [INFO] Starting gunicorn 20.0.4
+[2020-03-02 12:10:10 +0800] [16839] [INFO] Listening at: http://127.0.0.1:6010 (16839)
+[2020-03-02 12:10:10 +0800] [16839] [INFO] Using worker: sync
+[2020-03-02 12:10:10 +0800] [16842] [INFO] Booting worker with pid: 16842
+[2020-03-02 12:10:10 +0800] [16843] [INFO] Booting worker with pid: 16843
+[2020-03-02 12:10:10 +0800] [16844] [INFO] Booting worker with pid: 16844
